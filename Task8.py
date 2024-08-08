@@ -155,23 +155,6 @@ class Challenge8Particles:
 
     def getTotalDisplacement(self,totalTime):
         return self.velVector[0]*totalTime
-        
-    ##--KEY INPUTS------------------------------------------
-    def keyInputs(self, event):
-        if event.key=="1":
-           self.launchHeight+=1
-        elif event.key=="2":
-           self.launchHeight-=1
-        if event.key=="3":
-           self.velocity+=1
-        elif event.key=="4":
-           self.velocity-=1
-        if event.key=="5":
-           self.inputAngle+=math.radians(1)
-        elif event.key=="6":
-           self.inputAngle-=math.radians(1)
-        if event.key=="l": self.step+=0.01
-        elif event.key=="k": self.step-=0.01
 
     ##--POINT SPACING---------------------------------------
 
